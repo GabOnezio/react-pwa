@@ -1,6 +1,6 @@
 /// <reference types="vitest" />
 import * as path from 'path';
-import react from '@vitejs/plugin-react';
+import react from '@vitejs/plugin-react-swc';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
@@ -23,12 +23,12 @@ export default defineConfig({
       manifest: {
         name: 'Studio Go Fit',
         short_name: 'Studio Go Fit',
-        start_url: '/',
+        start_url: 'https://fuzzy-chainsaw-x4gr6q7955rcwxp-3000.app.github.dev/',
         display_override: ['fullscreen', 'minimal-ui'],
         display: 'fullscreen',
         background_color: '#000000',
         lang: 'en',
-        scope: '/',
+        scope: 'https://fuzzy-chainsaw-x4gr6q7955rcwxp-3000.app.github.dev/',
         description: '"Viva fit, viva saudável. Então, vamos juntos nessa jornada GoFit!🏃‍♂️💪',
         theme_color: '#000000',
         icons: [
